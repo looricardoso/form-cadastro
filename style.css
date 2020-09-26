@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+    background-image: url(images/background_page.jpg);
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+p {
+    text-align: center;
+}
+
+.dados_pessoais {
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #36526A;
+    box-shadow: 0 0 30px 10px #25415A;
+}
+
+.campo {
+    display: flex;
+    flex-flow: column;
+
+    padding: 10px;
+}
+
+.dados_contato {
+    margin-top: 15px;
+    flex-flow: column-reverse;
+    padding: 7px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 20px;
+    background-color: #36526A;
+    box-shadow: 0 0 30px 10px #25415A;
+}
+
+.opcaodecontato {
+    margin-top: 15px;
+    padding: 7px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 20px;
+    background-color: #36526A;
+    box-shadow: 0 0 30px 10px #25415A;
+}
+
+#labelcontactoptions {
+    display: flex;
+    justify-content: center;
+}
+
+.contactoptions {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.aceite {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+button {
+    /* width: max-content; */
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #36526A;
+    background-color: #36526A;
+    box-shadow: 0 0 10px white;
+}
+
+button[type="reset"] {
+    color: rgb(231, 68, 68);
+    height: 60px;
+    width: 60px;
+    /* align-content: center; */
+}
+
+button[type="submit"] {
+    color: rgb(74, 219, 163);
+    height: 60px;
+    width: 60px;
+    /* align-content: center; */
+}
+
+input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+
+    color: white;
+    background-color: #36526A;
+}
+
+select {
+    color: white;
+    background-color: #36526A;
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+/* Ocultar setas de incremento e decremento para input do tipo number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}

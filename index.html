@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução exercício form-cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+    <form>
+        <h1>Cadastro de Usuário    <i class="fas fa-user-plus"></i></h1>
+        <p>Campos marcados com * são obrigatórios.</p>
+        <div class="dados_pessoais">
+            <div class="campo">
+                <label for="nome_usuario">* Nome:</label>
+                <input type="text" id="nome_usuario" name="nome_usuario" required>
+            </div>
+            <div class="campo">
+                <label for="email_usuario">* E-mail:</label>
+                <input type="email" id="email_usuario" name="email_usuario" placeholder="Ex. meuemail@email.com" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" name="telefone" placeholder="Ex. 01398877-6655">
+            </div>
+            <div class="campo">
+                <label for="estado_civil">* Estado Civil:</label>
+                <select name="estado_civil" id="estado_civil" required>
+                    <option value="" selected>--- selecione uma opção ---</option>
+                    <option value="1">solteiro(a)</option>
+                    <option value="2">casado(a)</option>
+                    <option value="3">divorciado(a)</option>
+                    <option value="4">viúvo(a)</option>
+                    <option value="5">separado(a)</option>
+                </select>
+            </div>
+        </div>
+        <div class="dados_contato">
+            <div class="campo">
+                <label for="endereco">* Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="campo">
+                <label for="nr_endereco">* Número:</label>
+                <input type="number" name="nr_endereco" id="nr_endereco" required>
+            </div>
+            <div class="campo">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro">
+            </div>
+            <div class="campo">
+                <label for="cidade">* Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+            <div class="campo">
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="1">AC - Acre</option>
+                    <option value="2">AL - Alagoas</option>
+                    <option value="3">AP - Amapá</option>
+                    <option value="4">AM - Amazonas</option>
+                    <option value="5">BA - Bahia</option>
+                    <option value="6">CE - Ceará</option>
+                    <option value="7">DF - Distrito Federal</option>
+                    <option value="8">ES - Espírito Santo</option>
+                    <option value="9">GO - Goiás</option>
+                    <option value="10">MA - Maranhão</option>
+                    <option value="11">MT - Mato Grosso</option>
+                    <option value="12">MS - Mato Grosso do Sul</option>
+                    <option value="13">MG - Minas Gerais</option>
+                    <option value="14">PA - Pará</option>
+                    <option value="15">PB - Paraíba</option>
+                    <option value="16">PR - Paraná</option>
+                    <option value="17">PE - Pernambuco</option>
+                    <option value="18">PI - Piauí</option>
+                    <option value="19">RJ - Rio de Janeiro</option>
+                    <option value="20">RN - Rio Grande do Norte</option>
+                    <option value="21">RS - Rio Grande do Sul</option>
+                    <option value="22">RO - Rondônia</option>
+                    <option value="23">RR - Roraima</option>
+                    <option value="24">SC - Santa Catarina</option>
+                    <option value="25" selected>SP - São Paulo</option>
+                    <option value="26">SE - Sergipe</option>
+                    <option value="27">TO - Tocantins</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="cep">* CEP:</label>
+                <input type="number" name="cep" id="cep" required>
+            </div>
+        </div>
+        <div class="opcaodecontato">
+            <label id="labelcontactoptions">* Selecione uma opção de contato:</label>
+            <div class="contactoptions">
+                <input type="radio" name="opcao_contato" id="contato_por_email" required>
+                <label for="contato_por_email">E-mail</label>
+                <input type="radio" name="opcao_contato" id="contato_por_telefone">
+                <label for="contato_por_telefone">Telefone</label>
+            </div>
+        </div>
+        <div class="aceite">
+            <input type="checkbox" name="li_e_concordo" id="li_e_concordo" required>
+            <label for="li_e_concordo">* Li e concordo.</label>
+        </div>
+        <div class="botoes">
+            <button type="reset"><i class="fas fa-window-close fa-lg"></i> Resetar</button>
+            <button type="submit"><i class="fas fa-check-square fa-lg"></i> Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
